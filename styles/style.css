@@ -1,10 +1,14 @@
+body{
+	overflow-x: hidden;
+
+}
 .wrapper2 {
 	background: url(/images/hiking.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
 }
 .middle-area {
@@ -104,7 +108,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-	width: 100%;
+	width: 100vh;
 	height: 140px;
 	display: flex;
 	flex-direction: row;
@@ -150,8 +154,10 @@
 	align-items: flex-end;
 	top: 0;
 	right: 0;
-	margin-top: 3%;
-	margin-right: 4%;
+	margin-top: 2.5%;
+	margin-right: 2%;
+
+
 
 
 
@@ -200,7 +206,7 @@
 .big-letters {
 	height: 90px;
 	width: 75%;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	font-size: 65px;
 	color: #fff;
 	letter-spacing: .05em;
@@ -213,7 +219,7 @@
 .small-letters {
 	height: 30px;
 	width: 75%;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	font-size: 25px;
 	color: #fff;
 	letter-spacing: .2em;
@@ -242,7 +248,7 @@
 	left: 0;
 	margin-bottom: 10%;
 	margin-left: 35%;
-
+	font-family: 'Ubuntu';
 	display: flex;
 	justify-content: center;
 }
@@ -251,7 +257,7 @@
 	background: transparent;
 	border: 3px solid;
 	letter-spacing: .2em;
-	font-family: verdana;
+	font-family: 'Ubuntu';
 	color: #ffffff;
 	text-shadow: -1px 0 #999595,0 1px #999595,1px 0 #999595,0 -1px #999595;
 	box-shadow: -1px 0 #999595,0 1px #999595,1px 0 #999595,0 -1px #999595;
@@ -266,19 +272,24 @@
   margin-left: auto;
 	}
 
+.traildiv{
+	width: 100vw;
 
+
+}
 .trail-grid {
-	display: inline-flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	overflow-y: hidden;
-  max-height: 100vh;
-	margin-top: 15px;
-	overflow: hidden;
-    min-height: 0px;
+margin-right: 1%;
+
 }
 
-
+.scroll{
+	width:100vw;
+	height: 85vh;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	overflow-y: scroll;
+}
 
 .trailbox {
 width: 325px;
@@ -287,6 +298,7 @@ background: rgba(255, 255, 255, 0.4);
 margin-left: 22px;
 padding-top: 20px;
 padding-bottom: 20px;
+margin-top: 10px;
 
 
 
@@ -315,7 +327,7 @@ margin-top: 12px;
 .desc-box {
 	width: 285px;
 	height: auto;
-	background: rgba(8, 138, 28, 0.54);
+	background: rgba(8, 85, 29, 0.54);
 	margin-left: 20px;
 	margin-top: 12px;
 	padding-left: 5px;
@@ -345,6 +357,83 @@ margin-top: 12px;
 
 }
 
+.singletrailbox {
+width: 90%;
+height: auto;
+background: rgba(255, 255, 255, 0.4);
+margin-left: 22px;
+padding-top: 20px;
+padding-bottom: 20px;
+
+
+
+}
+
+.singletrailmap {
+width: 95%;
+height: 285px;
+background: green;
+margin-left: 20px;
+margin-top: 12px;
+
+}
+
+.singleangular-google-map-container {height: 285px; }
+
+.singletrailname {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 18px;
+	color: #fff;
+	letter-spacing: .2em;
+	text-shadow: -1px 0 #000,0 1px #000,1px 0 #000,0 -1px #000;
+	margin-left: 20px;
+}
+
+.singledesc-box {
+	width: 95%;
+	height: auto;
+	background: rgba(8, 85, 29, 0.54);
+	margin-left: 20px;
+	margin-top: 12px;
+	padding-left: 5px;
+
+}
+
+.singlelocation{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 10px;
+
+}
+.singletrail-length{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	color: #fff;
+	padding-bottom: 10px;
+
+}
+
+.singletrail-directions{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 10px;
+	line-height: 135%;
+
+}
+
+.singletrail-description{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 5px;
+	line-height: 135%;
+
+}
+
+
+
 #underline {
 	text-decoration: underline;
 }
@@ -361,7 +450,7 @@ margin-top: 12px;
 	background: transparent;
 	border: 3px solid;
 	letter-spacing: .2em;
-	font-family: verdana;
+	font-family: 'Ubuntu';
 	color: #ffffff;
 	text-shadow: -1px 0 #999595,0 1px #999595,1px 0 #999595,0 -1px #999595;
 	box-shadow: -1px 0 #999595,0 1px #999595,1px 0 #999595,0 -1px #999595;
@@ -379,8 +468,13 @@ margin-top: 12px;
 .filter-input {
 	margin-left:22px;
 	margin-right: 100%;
+	margin-bottom: 15px;
 	font-size: 16px;
-	
+	border:2px solid #456879;
+	border-radius:10px;
+	height: 22px;
+	width: 230px;
+
 }
 
 
@@ -389,10 +483,10 @@ margin-top: 12px;
 .big-letters {
 	height: 90px;
 	width: 75%;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	font-size: 75px;
 	color: #fff;
-	/*text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;*/
+	text-shadow: -1px 0 #999595,0 1px #999595,1px 0 #999595,0 -1px #999595;
 	text-align: center;
 	margin-left: 13%;
 	padding-top: 5%;
@@ -403,10 +497,10 @@ margin-top: 12px;
 .big-letters {
 	height: 90px;
 	width: 75%;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	font-size: 58px;
 	color: #fff;
-	/*text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;*/
+	text-shadow: -1px 0 #999595,0 1px #999595,1px 0 #999595,0 -1px #999595;
 	text-align: center;
 	margin-left: 13%;
 	padding-top: 5%;
@@ -420,10 +514,10 @@ margin-top: 12px;
 .big-letters {
 	height: 90px;
 	width: 75%;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	font-size: 50px;
 	color: #fff;
-	/*text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;*/
+	text-shadow: -1px 0 #999595,0 1px #999595,1px 0 #999595,0 -1px #999595;
 	text-align: center;
 	margin-left: 13%;
 	padding-top: 5%;
@@ -432,7 +526,7 @@ margin-top: 12px;
 .small-letters {
 	height: 30px;
 	width: 75%;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	font-size: 14px;
 	color: #fff;
 	letter-spacing: .2em;
@@ -441,7 +535,7 @@ margin-top: 12px;
 
 	margin-top: 60px;
 	position: static;
-	/*text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;*/
+	text-shadow: -1px 0 #999595,0 1px #999595,1px 0 #999595,0 -1px #999595;
 
 }
 }
@@ -450,10 +544,10 @@ margin-top: 12px;
 .big-letters {
 	height: 90px;
 	width: 75%;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	font-size: 45px;
 	color: #fff;
-	/*text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;*/
+	text-shadow: -1px 0 #999595,0 1px #999595,1px 0 #999595,0 -1px #999595;
 	text-align: center;
 	margin-left: 13%;
 	padding-top: 5%;
@@ -462,7 +556,7 @@ margin-top: 12px;
 .small-letters {
 	height: 30px;
 	width: 75%;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	font-size: 12px;
 	color: #fff;
 
@@ -472,7 +566,7 @@ margin-top: 12px;
 
 	margin-top: 60px;
 	position: static;
-	/*text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;*/
+	text-shadow: -1px 0 #999595,0 1px #999595,1px 0 #999595,0 -1px #999595;
 
 }
 }
@@ -484,7 +578,7 @@ margin-top: 12px;
 	font-family: 'Nunito', sans-serif;
 	font-size: 40px;
 	color: #fff;
-	/*text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;*/
+	text-shadow: -1px 0 #999595,0 1px #999595,1px 0 #999595,0 -1px #999595;
 	text-align: center;
 	margin-left: 13%;
 	padding-top: 5%;
@@ -502,7 +596,7 @@ margin-top: 12px;
 
 	margin-top: 60px;
 	position: static;
-	/*text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;*/
+	text-shadow: -1px 0 #999595,0 1px #999595,1px 0 #999595,0 -1px #999595;
 
 }
 }

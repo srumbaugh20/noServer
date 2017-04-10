@@ -1,5 +1,4 @@
 angular.module('app').controller('trailCtrl', function($scope, trailService, $stateParams, uiGmapGoogleMapApi){
-console.log("tailscrl");
 $scope.test = 'test';
 
 var getData = function(){

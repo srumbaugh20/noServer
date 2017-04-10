@@ -22,7 +22,7 @@ $stateProvider
   })
 
   .state('traildetails', {
-    url: '/traildetails/:id',
+    url: '/traildetails/:id/:lat/:lon',
     templateUrl: './views/trail-details.html',
     controller: 'trailDetailsCtrl'
   })

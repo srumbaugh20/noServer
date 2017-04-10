@@ -9,7 +9,6 @@ this.getData = function(){
 		headers:{
             'X-Mashape-Key': 'oSSORnciBcmsh4q4whBWUfJgzjx7p1mzuhMjsn5KNuB0IbTKYe'}
 	}).then(function(response) {
-		self.trails = response.data.places;
 		return response.data.places.map(function(hike) {
 			hike.latitude = hike.lat;
 			hike.longitude = hike.lon;
